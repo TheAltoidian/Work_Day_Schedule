@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./Develop/style.css" />
+  <link rel="stylesheet" href="./Assets/style.css" />
   <title>Work Day Scheduler</title>
 </head>
 
@@ -20,54 +20,55 @@
     <p id="currentDay" class="lead"></p>
   </header>
   <div class="container">
-    <div class="9A row">
-      <div class="p-3 mb-2 col-1 bg-white text-black">9AM</div>
-      <div class="p-3 mb-2 col-10 bg-success text-black">Event</div>
+    <div class="9 row" id="9">
+      <div class="p-3 mb-2 col-1 bg-white text-black" id="time9">9AM</div>
+      <div class="p-3 mb-2 col-10 bg-success text-black" id="event9">Event</div>
       <div class="p-3 mb-2 col-1 bg-info text-white">Save</div>
     </div>
-    <div class="10A row">
-      <div class="p-3 mb-2 col-1 bg-white text-black">9AM</div>
-      <div class="p-3 mb-2 col-10 bg-success text-black">Event</div>
+    <div class="10 row" id="10">
+      <div class="p-3 mb-2 col-1 bg-white text-black" id="time10">10AM</div>
+      <div class="p-3 mb-2 col-10 bg-success text-black" id="event10">Event</div>
       <div class="p-3 mb-2 col-1 bg-info text-white">Save</div>
     </div>
-    <div class="11A row">
-      <div class="p-3 mb-2 col-1 bg-white text-black">9AM</div>
-      <div class="p-3 mb-2 col-10 bg-success text-black">Event</div>
+    <div class="11 row" id="11">
+      <div class="p-3 mb-2 col-1 bg-white text-black" id="time11">11AM</div>
+      <div class="p-3 mb-2 col-10 bg-success text-black" id="event11">Event</div>
       <div class="p-3 mb-2 col-1 bg-info text-white">Save</div>
     </div>
-    <div class="12P row">
-      <div class="p-3 mb-2 col-1 bg-white text-black">9AM</div>
-      <div class="p-3 mb-2 col-10 bg-success text-black">Event</div>
+    <div class="12 row" id="12">
+      <div class="p-3 mb-2 col-1 bg-white text-black" id="time12">12AM</div>
+      <div class="p-3 mb-2 col-10 bg-success text-black" id="event12">Event</div>
       <div class="p-3 mb-2 col-1 bg-info text-white">Save</div>
     </div>
-    <div class="1P row">
-      <div class="p-3 mb-2 col-1 bg-white text-black">9AM</div>
-      <div class="p-3 mb-2 col-10 bg-success text-black">Event</div>
+    <div class="13 row" id="13">
+      <div class="p-3 mb-2 col-1 bg-white text-black" id="time13">1PM</div>
+      <div class="p-3 mb-2 col-10 bg-success text-black" id="event13">Event</div>
       <div class="p-3 mb-2 col-1 bg-info text-white">Save</div>
     </div>
-    <div class="2P row">
-      <div class="p-3 mb-2 col-1 bg-white text-black">9AM</div>
-      <div class="p-3 mb-2 col-10 bg-success text-black">Event</div>
+    <div class="14 row" id="14">
+      <div class="p-3 mb-2 col-1 bg-white text-black" id="time14">2PM</div>
+      <div class="p-3 mb-2 col-10 bg-success text-black" id="event14">Event</div>
       <div class="p-3 mb-2 col-1 bg-info text-white">Save</div>
     </div>
-    <div class="3P row">
-      <div class="p-3 mb-2 col-1 bg-white text-black">9AM</div>
-      <div class="p-3 mb-2 col-10 bg-success text-black">Event</div>
+    <div class="15 row" id="15">
+      <div class="p-3 mb-2 col-1 bg-white text-black" id="time15">2PM</div>
+      <div class="p-3 mb-2 col-10 bg-success text-black" id="event15">Event</div>
       <div class="p-3 mb-2 col-1 bg-info text-white">Save</div>
     </div>
-    <div class="4P row">
-      <div class="p-3 mb-2 col-1 bg-white text-black">9AM</div>
-      <div class="p-3 mb-2 col-10 bg-success text-black">Event</div>
+    <div class="16 row" id="16">
+      <div class="p-3 mb-2 col-1 bg-white text-black" id="time16">4PM</div>
+      <div class="p-3 mb-2 col-10 bg-success text-black" id="event16">Event</div>
       <div class="p-3 mb-2 col-1 bg-info text-white">Save</div>
     </div>
-    <div class="5P row">
-      <div class="p-3 mb-2 col-1 bg-white text-black">9AM</div>
-      <div class="p-3 mb-2 col-10 bg-success text-black">Event</div>
-      <div class="p-3 mb-2 col-1 bg-info text-white">Save</div>
+    <div class="17 row" id="17">
+      <div class="p-3 mb-2 col-1 bg-white text-black" id="time17">5PM</div>
+      <div class="p-3 mb-2 col-10 bg-success text-black" id="event17">Event</div>
+      <div class="p-3 mb-2 col-1 bg-info text-white">Save</div> 
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./Assets/script.js"></script>
 </body>
 
 </html>
