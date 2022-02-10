@@ -14,11 +14,13 @@ const eventListUpdate = function () {
 
 // display saved events upon opening the page
 const fillList = function () {
+    var retrieveEvents = JSON.parse(localStorage.getItem("day'sEvents")); 
+    console.log("retrieveEvents", retrieveEvents); 
     for (let i = 9; i < 18; i++) {
-        let currentEvent = document.getElementById("event" + i);
-        currentEvent.textContent = eventList[i - 9];
-        console.log(eventList[i - 9]);
-        console.log(currentEvent.id);
+        let currentEvent =$('#event'+i).find("p");
+        console.log("p",currentEvent);
+        currentEvent[0].textContent = retrieveEvents[i-9];
+        console.log( currentEvent[0].textContent);
     }
 };
 
@@ -50,7 +52,6 @@ $(".col-10").on("blur", "textarea", function () {
 // color events based on past or future
 const checkTime = function () {
     for (let i = 9; i < 18; i++) {
-        // console.log(i);
         let currentEvent = document.getElementById("event" + i);
         if (i < currentHour) {
             currentEvent.setAttribute("class", "p-3 mb-2 col-10 bg-secondary text-black");
@@ -61,7 +62,6 @@ const checkTime = function () {
         if (i > currentHour) {
             currentEvent.setAttribute("class", "p-3 mb-2 col-10 bg-success text-black");
         }
-        // console.log(document.getElementById("event" + i).textContent);
     }
 }
 
